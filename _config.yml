@@ -24,7 +24,7 @@ description              : "딥러닝 기반 스마트 카트 (Smart cart based 
 url                      : "https://knormal-21-hf404.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/512.png"
+teaser                   : # "/assets/images/512.png"
 logo                     : "/assets/images/512.png"
 masthead_title           : "Just Cart Out!" # 홈페이지 최 상탄에 들어갈 타이틀
 # breadcrumbs            : false # true, false (default)
