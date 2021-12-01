@@ -8,7 +8,7 @@ Just Cart Out(그냥 담아)은 딥러닝 기반 스마트 카트 서비스입�
 
 ---
 ---
-## __Primary Function__
+# __Primary Function__
 - AI를 활용한 장바구니 자동 업데이트
 - 자동결제 서비스
 - 연관 상품 추천 서비스
