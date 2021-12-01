@@ -36,4 +36,63 @@ Just Cart Out(그냥 담아)은 딥러닝 기반 스마트 카트 서비스입�
 
 ---
 ---
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+
+## __Installation__
+### Raspberry Pi 4 Model B
+##### SW
+
+Spec : 8GB RAM
+
+Installation Libaray 
+-  OpenCV 4.5.1
+-  Numpy(1.13.3)
+-  Socket Library
+
+##### HW
+Construction Equipment
+-  PI Camera(8MP Sony IMX219)
+-  Multi Camera Adaptor
+-  Road Cell(HX711)
+-  Battery Pack(EB-p3300)
+-  7inchs Screen
+
+<br/>
+
+---
+### AWS Server
+##### SW
+
+Platform : Ubuntu 18.04 (Deep Learning AMI)
+
+Instance Spec : g4dn.xlarge (4 vCPUs / 16GiB / 125GB ssd)
+
+Installation Libaray 
+-  OpenCV 4.5.1
+-  Numpy(1.13.3)
+-  Socket Library
+-  Darknet
+-  PHP(7.1.33)
+-  MySQL(5.7.29)
+-  Apache(2.4.43)
+
+<br/>
+
+---
+
+### SmartPhone Application
+##### SW
+Platform : Android OS(11)
+
+Tool : Android Studio (1.2.2)
+
+Installation Libaray
+-  Beacon SDK(iBeacon E7 SDK)
+##### HW
+Construction Equipment
+-  Beacon (iBeacon E7)
+
+<br/>
+
+---
+
+---
