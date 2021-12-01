@@ -1,8 +1,16 @@
 ---
 permalink: /about/
-title: "About"
+title: "About the project"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
-
+Just Cart Out(그냥 담아)은 딥러닝 기반 스마트 카트 서비스입니다. 저희 "그냥 담아" 서비스는 쇼핑 카트에 물건을 담으면 자동으로 물건을 인식해 결제금액을 계산해주고 매장 출구로 나가는 순간, 자동으로 결제해주는 편리한 쇼핑 시스템입니다.
+---
+---
+## __Primary Function__
+- AI를 활용한 장바구니 자동 업데이트
+- 자동결제 서비스
+- 연관 상품 추천 서비스
+- 신선도 알림 서비스
+---
+---
 Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
