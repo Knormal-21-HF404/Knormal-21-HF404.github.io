@@ -1,6 +1,7 @@
 ---
 permalink: /about/
 title: "About the project"
+sidebar_main: true
 ---
 
 Just Cart Out(그냥 담아)은 딥러닝 기반 스마트 카트 서비스입니다.  
