@@ -5,7 +5,6 @@ share: true
 related: true
 categories:
 - Front-end
-- toc: true
 toc_sticky: true
 toc_label: 목차
 description: JAVA를 공부하는 데 있어 기본이 되는 JVM이 무엇인지 학습하고, JVM의 메모리 구조와 Garbage collector,
