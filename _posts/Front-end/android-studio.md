@@ -1,8 +1,5 @@
 ---
 title: Android Studio
-comments: true
-share: true
-related: true
 categories:
 - Front-end
 toc: true
