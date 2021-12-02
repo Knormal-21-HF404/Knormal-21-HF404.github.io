@@ -1,7 +1,7 @@
 ---
 title: "SystemConfig"
 layout: archive
-permalink: categories/systemconfig
+permalink: categories/systemcon
 author_profile: true
 sidebar_main: true
 ---
