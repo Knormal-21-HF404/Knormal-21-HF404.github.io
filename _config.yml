@@ -103,6 +103,8 @@ analytics:
 # Menu Settings
 # ---------------------------------------------------------------
 
+category_list: [ nodejs, javascript, tip, diary, linux, chatbot, php ,publishing, jekyll, sql, error ]
+
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   # home: /
