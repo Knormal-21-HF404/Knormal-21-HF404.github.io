@@ -1,13 +1,13 @@
 ---
 title: JVM( Java Virtual Machine )이란
-layout: single
+layout: post
 author_profile: true
 read_time: true
 comments: true
 share: true
 related: true
-categories:
-- JAVA
+tags : htop, ubuntu, linux
+categories: linux
 toc: true
 toc_sticky: true
 toc_label: 목차
