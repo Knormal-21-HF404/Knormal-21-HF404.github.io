@@ -103,8 +103,6 @@ analytics:
 # Menu Settings
 # ---------------------------------------------------------------
 
-category_list: [ nodejs, javascript, tip, diary, linux, chatbot, php ,publishing, jekyll, sql, error ]
-
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   # home: /
@@ -114,22 +112,6 @@ menu:
   #tags: /tags/
   #search: /search/
   #commonweal: /404.html
-
-# Icon Mapping:
-#   Map a menu item to a specific FontAwesome icon name.
-#   Key is the name of menu item and value is the name of FontAwesome icon. Key is case-senstive.
-#   When an question mask icon presenting up means that the item has no mapping icon.
-menu_icons:
-  enable: true
-  #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
-  home: home
-  about: user
-  categories: th
-  schedule: calendar
-  tags: tags
-  archives: archive
-  search: search
-  commonweal: heartbeat
 
 
 
