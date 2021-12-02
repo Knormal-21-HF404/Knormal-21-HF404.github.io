@@ -1,8 +1,5 @@
 ---
 title: System-Config
-comments: true
-share: true
-related: true
 categories:
 - System-config
 toc: true
