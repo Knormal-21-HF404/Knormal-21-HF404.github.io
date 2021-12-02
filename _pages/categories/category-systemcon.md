@@ -1,5 +1,5 @@
 ---
-title: "SystemConfig"
+title: "System-config"
 layout: archive
 permalink: categories/systemcon
 author_profile: true
