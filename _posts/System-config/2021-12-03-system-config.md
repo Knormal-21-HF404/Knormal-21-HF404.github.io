@@ -10,7 +10,7 @@ description: JAVA를 공부하는 데 있어 기본이 되는 JVM이 무엇인�
 
 ## 시스템 구성도는 센서, 클라우드, 서비스로 나뉩니다.  
 
-![sys1](~@/assets/images/sys1.png)
+![sys1](/assets/images/sys1.png)
 ![img](https://www.google.com/assets/images/sys1.png)
 
 IoT센서는 카메라, 무게센서, 비콘을 사용합니다.  
