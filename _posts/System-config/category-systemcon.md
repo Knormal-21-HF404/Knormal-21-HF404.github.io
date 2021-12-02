@@ -1,5 +1,5 @@
 ---
-title: "System-Config"
+title: System-Config
 comments: true
 share: true
 related: true
