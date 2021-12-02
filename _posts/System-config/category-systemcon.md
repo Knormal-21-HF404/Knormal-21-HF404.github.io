@@ -4,6 +4,9 @@ layout: archive
 permalink: categories/systemcon
 author_profile: true
 sidebar_main: true
+categories:
+- System-config
+
 ---
 
 ##시스템 구성도는 센서, 클라우드, 서비스로 나뉩니다.  
