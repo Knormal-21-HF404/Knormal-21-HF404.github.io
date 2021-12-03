@@ -5,7 +5,6 @@ categories:
 toc: true
 toc_sticky: true
 toc_label: 목차
-description: "그냥 담아" 프로젝트의 진행 사항과 결과물에 대한 페이지입니다.
 ---
 
 ## Step 1: 데이터 수집하기 
