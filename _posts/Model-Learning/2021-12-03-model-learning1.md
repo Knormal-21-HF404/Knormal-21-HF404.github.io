@@ -23,7 +23,8 @@ Hold to Record를 누르는 동안 연사가 찍힌다. class 옆에 점세개�
 
 ### ② 동영상을 JPG로 변환
 동영상파일을 프레임별로 잘라 사진 파일로 내보내주는 툴도 사용해 진행해 보았습니다.
-**참고링크** <br>
+
+ <br>**참고링크**
 -- [https://dzone.com/articles/jvm-architecture-explained]({{"https://dzone.com/articles/jvm-architecture-explained"}}){:target="_blank"} <br>
 {: .notice--info}
 
