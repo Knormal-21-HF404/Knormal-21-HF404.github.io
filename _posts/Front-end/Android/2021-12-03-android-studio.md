@@ -1,7 +1,7 @@
 ---
 title: Android Studio
 categories:
-- Front-end
+- Android
 toc: true
 toc_sticky: true
 ---
