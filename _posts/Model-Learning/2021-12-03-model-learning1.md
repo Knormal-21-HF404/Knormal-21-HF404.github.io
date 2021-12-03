@@ -16,8 +16,7 @@ toc_label: 목차
 ![label1](/assets/images/label1.png)
 ![label2](/assets/images/label2.png)
 <br>
-Teachable Machine에 들어간 뒤 Image Project를 누르면 오른쪽 사진처럼 웹캠이 켜지는 것을 볼 수 있다. 
-Hold to Record를 누르는 동안 연사가 찍힌다. class 옆에 점세개를 누르고 Download Samples를 누르면 수집한 데이터 사진들을 다운할 수 있다. <br><br>
+Teachable Machine에 들어간 뒤 Hold to Record를 누르는 동안 연사가 찍히고 Download Samples를 누르면 수집한 데이터들을 다운받을 수 있습니다. <br><br>
 
 ### ② 동영상을 JPG로 변환
 동영상파일을 프레임별로 잘라 사진 파일로 내보내주는 툴도 사용해 진행해 보았습니다.
