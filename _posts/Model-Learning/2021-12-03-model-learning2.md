@@ -22,6 +22,7 @@ yolov4-tiny-custom.cfg<br>
 
 ### ② obj.data
 ![label6](/assets/images/label6.png)  
+
 훈련에 필요한 파일들의 경로정보를 넣어줍니다.
 - train.txt
 - test.txt
@@ -42,6 +43,7 @@ document.querySelector("colab-toolbar-button#connect").click()
 }
 setInterval(ClickConnect, 60 * 1000)
 ````
+
 
 ## Step 2: 모델 최적화
 인식정확도를 높이기 위해 모델 최적화를 진행한 결과 데이터셋(1차 데이터셋, 2차 데이터셋, 크롤링 데이터, Augmentation)을 학습한 결과 정확도가 **`98.7%`**가 나왔습니다.

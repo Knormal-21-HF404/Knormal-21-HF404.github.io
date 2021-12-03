@@ -16,6 +16,7 @@ toc_label: 목차
 ![label1](/assets/images/label1.png)
 ![label2](/assets/images/label2.png)
 <br>
+
 Teachable Machine에 들어간 뒤 Hold to Record를 누르는 동안 연사가 찍히고 Download Samples를 누르면 수집한 데이터들을 다운받을 수 있습니다. <br><br>
 
 ### ② 동영상을 JPG로 변환
@@ -27,7 +28,7 @@ Teachable Machine에 들어간 뒤 Hold to Record를 누르는 동안 연사가 
 
 Frames for video를 설정한 값에 따라 영상에서 원하는 frame 수만큼 이미지를 잘라 저장합니다.  
 이미지를 추출하면 다음과 같이 학습데이터 이미지 파일을 수집할 수 있습니다.
-![label3](/assets/images/label3.png)
+![label3](/assets/images/label3.png) <br><br>
 
 ### ③ 크롤링
 데이터셋을 늘리기 위해 크롤링을 수행합니다.  
@@ -105,7 +106,7 @@ for imagePath in paths.list_images(args["output"]):
 		os.remove(imagePath)
 
 ````
-
+<br><br><br>
 
 ## Step 2: 데이터 라벨링
 데이터를 다 수집한 후 인식하려는 부분을 지정해주기 위해 라벨링 과정을 진행합니다.  
@@ -117,13 +118,15 @@ for imagePath in paths.list_images(args["output"]):
 {: .notice--info}
 
 LabelImg로 실행하면 아래와 같은 화면을 볼 수 있습니다.  
+
 ![label4](/assets/images/label4.png)
 
-오른쪽에 Use default label에 원하는 class 이름을 넣고 왼쪽 설정을 YOLO로 바꿔준 뒤 w를 눌러 line을 띄워서 원하는 구간을 라벨링합니다. 이렇게 하면 해당 이미지 옆에 같은 이름의 text파일이 생기는데, 이 파일엔 class 번호와 라벨링의 좌표값이 찍힙니다. 
-저장을 하고 d를 누르면 다음 사진으로 넘어가게 됩니다.  
-다음과 같은 방법으로 "그냥 담아" 데이터셋는 15000장을 수집하였습니다.
+오른쪽에 Use default label에 원하는 class 이름을 넣고 왼쪽 설정을 YOLO로 바꿔준 뒤 w를 눌러 line을 띄워서 원하는 구간을 라벨링합니다. 
 
-각자의 컴퓨터 라벨링을 진행하면 첫번째로 라벨링한 물체의 class는 0이 되어 모두 같은 클래스를 갖게 됩니다.  
+다음과 같은 방법으로 "그냥 담아" 데이터셋는 `15000장`을 수집하였습니다.
+
+:exclamation: 각자의 컴퓨터 라벨링을 진행하면 첫번째로 라벨링한 물체의 class는 0이 되어 모두 같은 클래스를 갖게 됩니다. 
+ 
 각 클래스마다 번호를 부여하기 위해 다음과 같은 코드를 사용했습니다.
 
 ```python
