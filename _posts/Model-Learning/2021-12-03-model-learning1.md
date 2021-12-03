@@ -1,12 +1,11 @@
 ---
-title: "데이터 수집하기"
+title: "데이터 수집"
 categories:
   - Model-Learning
 toc: true
 toc_sticky: true
 toc_label: 목차
-description: JAVA를 공부하는 데 있어 기본이 되는 JVM이 무엇인지 학습하고, JVM의 메모리 구조와 Garbage collector,
-  Execution Engine, Class Loader에 대한 기본적인 설명 등 JVM이 어떻게 돌아가는지에 대한 기초를 잡는 게시물
+description: "그냥 담아" 프로젝트의 진행 사항과 결과물에 대한 페이지입니다.
 ---
 
 ## Step 1: 데이터 수집하기 
@@ -119,16 +118,32 @@ for imagePath in paths.list_images(args["output"]):
 -- [https://deftkang.tistory.com/181]({{"https://deftkang.tistory.com/181"}}){:target="_blank"} <br>
 {: .notice--info}
 
-LabelImg로 실행하면 아래와 같은 화면을 볼 수 있습니다.
+LabelImg로 실행하면 아래와 같은 화면을 볼 수 있습니다.  
 ![label4](/assets/images/label4.png)
 
-오른쪽에 Use default label에 원하는 class 이름을 넣고 왼쪽 설정을 YOLO로 바꿔준 뒤 w를 눌러 line을 띄워서 원하는 구간을 라벨링합니다. 이렇게 하면 해당 이미지 옆에 같은 이름의 text파일이 생기는데, 이 파일엔 class 번호와 라벨링의 좌표값이 찍힙니다. 저장을 하고 d를 누르면 다음 사진으로 넘어가게 됩니다.  
+오른쪽에 Use default label에 원하는 class 이름을 넣고 왼쪽 설정을 YOLO로 바꿔준 뒤 w를 눌러 line을 띄워서 원하는 구간을 라벨링합니다. 이렇게 하면 해당 이미지 옆에 같은 이름의 text파일이 생기는데, 이 파일엔 class 번호와 라벨링의 좌표값이 찍힙니다. 
+저장을 하고 d를 누르면 다음 사진으로 넘어가게 됩니다.  
 다음과 같은 방법으로 "그냥 담아" 데이터셋는 15000장을 수집하였습니다.
 
-IoT센서는 카메라, 무게센서, 비콘을 사용합니다. 
+각자의 컴퓨터 라벨링을 진행하면 첫번째로 라벨링한 물체의 class는 0이 됩니다. 
+그렇기 때문에 class 0만 많아지고 모두 같은 클래스를 갖게 되는 문제가 발생합니다. 
+이를 해결하기 위해 텍스트 파일의 맨 앞에 있는 class 번호를 바꾸는 코드가 필요했고 다음과 같은 코드를 사용해 각각의 클래스에 알맞은 num을 부여했습니다.
 
-IoT플랫폼을 통해서 센서정보를 수집하고 머신러닝 기술을 이용하여 분석합니다.  
-IoT플랫폼에서의 판단결과를 바탕으로 물품 플랫폼에서 데이터베이스가 업데이트 됩니다.  
+```python
+# class 번호 지정
+for i in range(1, 774): #파일이름번호
+    s = str(i)
+    filename="C:/kancho/kancho ("+s+").txt" #파일이름 지정
+    with open(filename, "r") as f:       #파일 읽어서 각 문자열 리스트로 저장
+        xs = f.read()
+        strings = xs.split()
+    with open(filename, "w") as f:       #내용수정
+        f.write("6" + " ")               #맨 앞에 필요한 class 숫자 씀
+        for string in strings:
+            if string != "0":            #필요없는 숫자만 빼고 리스트에 들어있는 문자열 다시 씀
+                f.write(string+" ")
 
-### Service 부분에서는 Application을 통해 여러 정보를 확인할 수 있습니다.
+````
+
+위와 같은 과정을 모두 진행한 후 모델을 학습합니다.
 
