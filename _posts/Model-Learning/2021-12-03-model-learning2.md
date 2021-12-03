@@ -18,7 +18,7 @@ toc_label: 목차
 
 ![label5](/assets/images/label5.png)  
 <br>
-yolov4-tiny-custom.cfg<br>
+yolov4-tiny-custom.cfg<br><br>
 
 ### ② obj.data
 ![label6](/assets/images/label6.png)  
@@ -29,6 +29,7 @@ yolov4-tiny-custom.cfg<br>
 - obj.names
 - process.py
 - obj.names
+<br>
 
 **모든 파일이 준비되었으면 코랩 코드를 따라 순차적으로 실행시키면 됩니다.**
 
@@ -43,7 +44,7 @@ document.querySelector("colab-toolbar-button#connect").click()
 }
 setInterval(ClickConnect, 60 * 1000)
 ````
-
+<br><br><br>
 
 ## Step 2: 모델 최적화
 인식정확도를 높이기 위해 모델 최적화를 진행한 결과 데이터셋(1차 데이터셋, 2차 데이터셋, 크롤링 데이터, Augmentation)을 학습한 결과 정확도가 **`98.7%`**가 나왔습니다.
