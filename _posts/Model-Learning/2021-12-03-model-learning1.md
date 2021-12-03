@@ -14,7 +14,7 @@ toc_label: 목차
 데이터를 수집하기 위해서 티처블머신(Teachable Machine)을 이용해 진행하였습니다.
 
 ![label1](/assets/images/label1.png)
-![label2](/assets/images/label2.png)
+![label2](/assets/images/label2.png){: width="500" height="300"}
 <br>
 
 Teachable Machine에 들어간 뒤 Hold to Record를 누르는 동안 연사가 찍히고 Download Samples를 누르면 수집한 데이터들을 다운받을 수 있습니다. <br><br>
