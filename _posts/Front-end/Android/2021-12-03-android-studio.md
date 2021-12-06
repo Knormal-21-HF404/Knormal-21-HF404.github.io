@@ -19,17 +19,28 @@ toc_sticky: true
 
 ## 2️⃣ 메인
 "그냥 담아" 메인 페이지에서는 다양한 서비스가 연결되어 있습니다.
-- 장바구니 서비스
-- 마이페이지
+- QR 서비스
 - 검색 서비스
+- 물품 추천 서비스
 - 체크리스트 확인
+- 장바구니
+- 신선도 서비스
+- 자동결제
 - 물품별 카테고리 확인
 - 이벤트
-- QR
 
 <center><img src="/assets/images/android13.png" width="200" height="300"></center>메인
 
 <br>
+
+## 3️⃣ QR 코드
+QR코드는 카트에 qr코드를 인식하면 유저아이디를 통해 최신 주문번호를 받아옵니다.
+
+① QR코드는 바코드 스캐닝 오픈소스 (ZXing Android Embedded
+![image](https://user-images.githubusercontent.com/89686109/144807532-2124fa26-1729-4302-b637-e5ffff019940.png)
+
+
+<center><img src="/assets/images/android13.png" width="200" height="300"></center>메인
 
 ## 3️⃣ 장바구니
 스마트 카트에 구매할 상품을 넣으면 상품의 종류를 인식해 장바구니 앱에 출력됩니다. 
