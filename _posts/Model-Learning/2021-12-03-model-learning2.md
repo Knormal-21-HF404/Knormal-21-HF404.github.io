@@ -34,7 +34,7 @@ yolov4-tiny-custom.cfg<br><br>
 **모든 파일이 준비되었으면 코랩 코드를 따라 순차적으로 실행시키면 됩니다.**
 
 <br>**코랩의 런타임이 끊기는 것을 방지하기 위해 콘손창에 코드 추가**   **참조링크**
--- [https://teddylee777.github.io/colab/google-colab-%EB%9F%B0%ED%83%80%EC%9E%84-%EC%97%B0%EA%B2%B0%EB%81%8A%EA%B9%80%EB%B0%A9%EC%A7%80]({{"https://teddylee777.github.io/colab/google-colab-%EB%9F%B0%ED%83%80%EC%9E%84-%EC%97%B0%EA%B2%B0%EB%81%8A%EA%B9%80%EB%B0%A9%EC%A7%80"}}){:target="_blank"}
+-- [https://teddylee777.github.io/colab/google-colab-%EB%9F%B0%ED%83%80%EC%9E%84-%EC%97%B0%EA%B2%B0%EB%81%8A%EA%B9%80%EB%B0%A9%EC%A7%80]({{"https://teddylee777.github.io/colab/google-colab-%EB%9F%B0%ED%83%80%EC%9E%84-%EC%97%B0%EA%B2%B0%EB%81%8A%EA%B9%80%EB%B0%A9%EC%A7%80"}}){:target="_blank"}<br>
 {: .notice--info}
 
 ```java
