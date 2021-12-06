@@ -38,13 +38,13 @@ toc_sticky: true
 ## 3️⃣ QR 코드
 QR코드는 카트에 qr코드를 인식하면 유저아이디를 통해 최신 주문번호를 받아옵니다.
 
-__① QR코드는 바코드 스캐닝 오픈소스 (ZXing Android Embedded)를 사용해 구성합니다.__  
-__② 카트에 qr 코드를 인식하면 데이터베이스에 유저아이디를 업데이트합니다.__
+#### ① QR코드는 바코드 스캐닝 오픈소스 (ZXing Android Embedded)를 사용해 구성합니다.
+#### ② 카트에 qr 코드를 인식하면 데이터베이스에 유저아이디를 업데이트합니다.
 
 <center><img src="/assets/images/android3.jpg" width="200" height="300"></center>
 <center>QR코드</center>
 
-__③ 안드로이드 코드에 유저아이디를 php파일에 전달해 아이디가 일치하면 최신 주문번호를 받아옵니다.__
+#### ③ 안드로이드 코드에 유저아이디를 php파일에 전달해 아이디가 일치하면 최신 주문번호를 받아옵니다.
 ```php
 	@Override
   public void onBackPressed() {
@@ -62,7 +62,7 @@ __③ 안드로이드 코드에 유저아이디를 php파일에 전달해 아이
 ## 4️⃣ 물품 검색 및 추천
 물품을 검색하면 데이터베이스에서 물품정보와 추천정보를 가져옵니다.
 
-__① 물품을 검색하면 검색값을 받아와 php파일에 전달합니다.__  
+#### ① 물품을 검색하면 검색값을 받아와 php파일에 전달합니다.  
 ```java
 //검색 버튼을 클릭 시 수행
 button_search.setOnClickListener(new View.OnClickListener() {
@@ -75,13 +75,13 @@ task.execute(mEditTextSearchKeyword.getText().toString());
 
 ````
 
-__② 검색값을 데이터베이스의 'SHOPBASKET' 테이블과 비교 후 물품 상세정보를 출력합니다.__  
+#### ② 검색값을 데이터베이스의 'SHOPBASKET' 테이블과 비교 후 물품 상세정보를 출력합니다.
 물품과 관련된 상품도 추천해 같이 출력해 사용자가 확인할 수 있습니다.
 
 <center><img src="/assets/images/android9.jpg" width="200" height="300"> <img src="/assets/images/android10.jpg" width="200" height="300"></center>
 <center>검색화면 & 추천화면</center>
 
-__③ 안드로이드 코드에 유저아이디를 php파일에 전달해 아이디가 일치하면 최신 주문번호를 받아옵니다.__  
+#### ③ 안드로이드 코드에 유저아이디를 php파일에 전달해 아이디가 일치하면 최신 주문번호를 받아옵니다.  
 ```php
 	@Override
   public void onBackPressed() {
