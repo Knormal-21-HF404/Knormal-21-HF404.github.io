@@ -55,9 +55,12 @@ String postParameters = "&userID=" + searchKeyword1 +"&order_id=" + searchKeywor
 	$order_id = isset($_POST['order_id']) ? $_POST['order_id'] : ''; //이름값 가져옴
 	$android = strpos($_SERVER['HTTP_USER_AGENT'], "Android");
 
+	if ($userID != "" ){ 
+
     $sql="select productName, productPrice, classNum from USERBASKET where userID='$userID' and order_id='$order_id'";
     $stmt = $con->prepare($sql);
     $stmt->execute();
+    ...
 
 ````
 
