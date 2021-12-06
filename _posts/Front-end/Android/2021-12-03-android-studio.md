@@ -182,6 +182,7 @@ handler.post(runnable1);}
 
 ① 비콘을 사용하여 사용자가 가까이 왔을 때 실행되도록 합니다.
 
+#### 자동결제
 ```java
 // 자동결제
 ((Beacon) beacons.iterator().next()).getDistance() < 0.5 && minor == 55155
@@ -191,6 +192,7 @@ beaconManager.startRangingBeacons(new Region("AC:23:3F:7E:09:8C", null, null, nu
 ````
 👉비콘과의 거리가 0.5m 안이고 매장출구 비콘을 인식했을 시 자동결제 됩니다.
 
+#### 신선도 
 ```java
 // 신선도알림
 ((Beacon) beacons.iterator().next()).getDistance() < 0.5 && minor == 55024
