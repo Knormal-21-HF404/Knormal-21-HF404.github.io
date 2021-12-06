@@ -27,9 +27,35 @@ toc_sticky: true
 - 이벤트
 - QR
 
-<center><img src="/assets/images/android13.jpg" width="200" height="300"></center>
+<center><img src="/assets/images/android13.png" width="200" height="300"></center>메인
 
 <br>
 
 ## 3️⃣ 장바구니
-스마트 카트에 구매할 상품을 넣으면 상품의 종류를 인식해 장바구니 앱에 출력됩니다.
+스마트 카트에 구매할 상품을 넣으면 상품의 종류를 인식해 장바구니 앱에 출력됩니다. 
+
+userID와 주문번호를 이용하여 사용자의 장바구니를 가져옵니다.
+
+① 안드로이드 코드에서 유저아이디와 주문번호 php 파일에 전달합니다.
+
+```java
+USER_ID = SharedPreference.getUserID(ShopActivity2.this);  
+ORDER_ID = SharedPreference.getOrderID(ShopActivity2.this;
+
+String serverURL = "http://3.37.3.112/Load_userbasket.php"; 
+String postParameters = "&userID=" + searchKeyword1 +"&order_id=" + searchKeyword2
+
+````
+
+② php 파일에서 유저아이디와 주문번호가 일치하는 장바구니 정보를 받아옵니다.
+
+```java
+USER_ID = SharedPreference.getUserID(ShopActivity2.this);  
+ORDER_ID = SharedPreference.getOrderID(ShopActivity2.this;
+
+String serverURL = "http://3.37.3.112/Load_userbasket.php"; 
+String postParameters = "&userID=" + searchKeyword1 +"&order_id=" + searchKeyword2
+
+````
+
+<center><img src="/assets/images/android7.jpg" width="200" height="300"></center>
