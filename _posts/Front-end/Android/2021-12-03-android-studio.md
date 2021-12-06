@@ -64,4 +64,25 @@ String postParameters = "&userID=" + searchKeyword1 +"&order_id=" + searchKeywor
 
 ````
 
-<center><img src="/assets/images/android7.jpg" width="200" height="300"></center>
+③ 안드로이드 코드에서 장바구니에 물건이 들어올 때마다 총액을 계산할 수 있는 총액 계산 코드를 추가합니다.
+
+```java
+a += Integer.parseInt(productPrice,10)*Integer.parseInt(classNum,10);
+
+````
+
+④ 마지막으로 장바구니에 항목이 추가될 때마다 자동으로 리스트가 업데이트 되도록 구성합니다.
+
+```java
+mCustomRunnable = new CustomRunnable();
+handler = new Handler();
+runnable1 = new ProgressRunnable();
+
+````
+```java
+if(info.get(0).topActivity.getClassName().equals("com.example.JustCart_ver4.ShopActivity2")){
+handler.post(runnable1);}
+
+````
+
+<center><img src="/assets/images/android7.jpg" width="200" height="300"></center> 장
