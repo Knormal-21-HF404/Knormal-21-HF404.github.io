@@ -1,5 +1,5 @@
 ---
-title: Android Studio Application1
+title: Android Studio Application
 categories:
 - Android
 tags:
