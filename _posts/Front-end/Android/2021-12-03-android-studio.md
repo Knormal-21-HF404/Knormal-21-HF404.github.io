@@ -36,8 +36,12 @@ toc_sticky: true
 ## 3️⃣ QR 코드
 QR코드는 카트에 qr코드를 인식하면 유저아이디를 통해 최신 주문번호를 받아옵니다.
 
-① QR코드는 바코드 스캐닝 오픈소스 (ZXing Android Embedded
-![image](https://user-images.githubusercontent.com/89686109/144807532-2124fa26-1729-4302-b637-e5ffff019940.png)
+① QR코드는 바코드 스캐닝 오픈소스 (ZXing Android Embedded)를 사용해 구성합니다.
+![image](https://user-images.githubusercontent.com/89686109/144807701-96e09b13-bf97-4bd3-aab4-a8e87a5a75a4.png)
+
+② 카트에 qr 코드를 인식하면 데이터베이스에 유저아이디를 업데이트합니다.
+
+
 
 
 <center><img src="/assets/images/android13.png" width="200" height="300"></center>메인
