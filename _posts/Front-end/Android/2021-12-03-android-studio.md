@@ -38,14 +38,14 @@ toc_sticky: true
 ## 3️⃣ QR 코드
 QR코드는 카트에 qr코드를 인식하면 유저아이디를 통해 최신 주문번호를 받아옵니다.
 
-### ① QR코드는 바코드 스캐닝 오픈소스 (ZXing Android Embedded)를 사용해 구성합니다.
+#### ① QR코드는 바코드 스캐닝 오픈소스 (ZXing Android Embedded)를 사용해 구성합니다.
 
-② 카트에 qr 코드를 인식하면 데이터베이스에 유저아이디를 업데이트합니다.
+#### ② 카트에 qr 코드를 인식하면 데이터베이스에 유저아이디를 업데이트합니다.
 
 <center><img src="/assets/images/android3.jpg" width="200" height="300">QR코드</center>
 <center>QR코드</center>
 
-③ 안드로이드 코드에 유저아이디를 php파일에 전달해 아이디가 일치하면 최신 주문번호를 받아옵니다.
+#### ③ 안드로이드 코드에 유저아이디를 php파일에 전달해 아이디가 일치하면 최신 주문번호를 받아옵니다.
 ```php
 	@Override
   public void onBackPressed() {
