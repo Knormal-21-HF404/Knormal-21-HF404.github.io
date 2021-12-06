@@ -173,3 +173,33 @@ handler.post(runnable1);}
 
 <center><img src="/assets/images/android7.jpg" width="200" height="300"></center>
 <center>장바구니</center>
+
+<br>
+
+## 7️⃣ 신선도 체크 & 자동결제
+신선도 체크와 자동결제는 비콘인식 오픈소스를 사용해 구성합니다.
+
+① 비콘을 사용하여 사용자가 가까이 왔을 때 실행되도록 합니다.
+
+```java
+// 자동결제
+((Beacon) beacons.iterator().next()).getDistance() < 0.5 && minor == 55155
+
+beaconManager.startRangingBeacons(new Region("AC:23:3F:7E:09:8C", null, null, null));
+
+````
+👉비콘과의 거리가 0.5m 안이고 매장출구 비콘을 인식했을 시 자동결제 됩니다.
+
+```java
+// 신선도알림
+((Beacon) beacons.iterator().next()).getDistance() < 0.5 && minor == 55024
+
+beaconManager.startRangingBeacons(new Region("AC:23:3F:7E:09:09", null, null, null));
+
+````
+👉비콘과의 거리가 0.5m 안이고 신선식품 매대 비콘을 인식했을 시에 신선도알림이 울립니다.
+
+<center><img src="/assets/images/android8.jpg" width="200" height="300"></center>
+<center>신선도알림</center>
+
+
