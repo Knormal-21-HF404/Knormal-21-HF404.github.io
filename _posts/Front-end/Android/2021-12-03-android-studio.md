@@ -29,7 +29,8 @@ toc_sticky: true
 - 물품별 카테고리 확인
 - 이벤트
 
-<center><img src="/assets/images/android13.png" width="200" height="300"></center>메인
+<center><img src="/assets/images/android13.png" width="200" height="300"></center>
+<center>메인</center>
 
 <br>
 
