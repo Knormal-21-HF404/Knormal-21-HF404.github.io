@@ -37,16 +37,82 @@ toc_sticky: true
 QR코드는 카트에 qr코드를 인식하면 유저아이디를 통해 최신 주문번호를 받아옵니다.
 
 ① QR코드는 바코드 스캐닝 오픈소스 (ZXing Android Embedded)를 사용해 구성합니다.
-![image](https://user-images.githubusercontent.com/89686109/144807701-96e09b13-bf97-4bd3-aab4-a8e87a5a75a4.png)
 
 ② 카트에 qr 코드를 인식하면 데이터베이스에 유저아이디를 업데이트합니다.
 
+<center><img src="/assets/images/android3.jpg" width="200" height="300">QR코드</center>
 
+③ 안드로이드 코드에 유저아이디를 php파일에 전달해 아이디가 일치하면 최신 주문번호를 받아옵니다.
+```php
+	@Override
+  public void onBackPressed() {
+  super.onBackPressed();
+  showResult2(USER_ID);
+  mArrayList = new ArrayList<>(); 
+  finish();
+  }
+    ...
 
+````
 
-<center><img src="/assets/images/android13.png" width="200" height="300"></center>메인
+<br>
 
-## 3️⃣ 장바구니
+## 4️⃣ 물품 검색 및 추천
+물품을 검색하면 데이터베이스에서 물품정보와 추천정보를 가져옵니다.
+
+① 물품을 검색하면 검색값을 받아와 php파일에 전달합니다.
+```java
+//검색 버튼을 클릭 시 수행
+button_search.setOnClickListener(new View.OnClickListener() {
+public void onClick(View v) {
+mArrayList.clear();
+GetData task = new GetData();
+task.execute(mEditTextSearchKeyword.getText().toString());
+}
+});
+
+````
+
+② 검색값을 데이터베이스의 'SHOPBASKET' 테이블과 비교 후 물품 상세정보를 출력합니다.
+물품과 관련된 상품도 추천해 같이 출력해 사용자가 확인할 수 있습니다.
+
+<center><img src="/assets/images/android9.jpg" width="200" height="300">검색화면 <img src="/assets/images/android10.jpg" width="200" height="300">추천화면</center>
+
+③ 안드로이드 코드에 유저아이디를 php파일에 전달해 아이디가 일치하면 최신 주문번호를 받아옵니다.
+```php
+	@Override
+  public void onBackPressed() {
+  super.onBackPressed();
+  showResult2(USER_ID);
+  mArrayList = new ArrayList<>(); 
+  finish();
+  }
+    ...
+
+````
+
+<br>
+
+## 5️⃣ 체크리스트
+앞서 설명했던 검색기능을 사용한 후 옆에 있는 찜버튼을 누를 경우 체크리스트에 추가됩니다.
+
+① 사용자가 검색 결과 출력된 상품에 찜 버튼을 누릅니다.
+
+② 검색한 물품이름, 유저아이디, 주문번호를 php 파일에 전달합니다.
+```java
+CheckRequest checkRequest = new CheckRequest(USER_ID, ORDER_ID, Name, responseListener);
+RequestQueue queue = Volley.newRequestQueue(SearchActivity.this);
+queue.add(checkRequest);
+
+````
+
+③ 전달받은 데이터는 데이터베이스 체크리스트 항목에 삽입해 체크리스트를 생성합니다.
+
+<center><img src="/assets/images/android6.jpg" width="200" height="300">체크리스트</center>
+
+<br>
+
+## 6️⃣ 장바구니
 스마트 카트에 구매할 상품을 넣으면 상품의 종류를 인식해 장바구니 앱에 출력됩니다. 
 
 userID와 주문번호를 이용하여 사용자의 장바구니를 가져옵니다.
