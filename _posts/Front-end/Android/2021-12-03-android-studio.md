@@ -39,10 +39,10 @@ userID와 주문번호를 이용하여 사용자의 장바구니를 가져옵니
 ① 안드로이드 코드에서 유저아이디와 주문번호 php 파일에 전달합니다.
 
 ```java
-USER_ID = SharedPreference.getUserID(ShopActivity2.this);  
+USER_ID = SharedPreference.getUserID(ShopActivity2.this);  
 ORDER_ID = SharedPreference.getOrderID(ShopActivity2.this;
 
-String serverURL = "http://3.37.3.112/Load_userbasket.php"; 
+String serverURL = "http://3.37.3.112/Load_userbasket.php";
 String postParameters = "&userID=" + searchKeyword1 +"&order_id=" + searchKeyword2
 
 ````
@@ -50,10 +50,10 @@ String postParameters = "&userID=" + searchKeyword1 +"&order_id=" + searchKeywor
 ② php 파일에서 유저아이디와 주문번호가 일치하는 장바구니 정보를 받아옵니다.
 
 ```java
-USER_ID = SharedPreference.getUserID(ShopActivity2.this);  
+USER_ID = SharedPreference.getUserID(ShopActivity2.this);
 ORDER_ID = SharedPreference.getOrderID(ShopActivity2.this;
 
-String serverURL = "http://3.37.3.112/Load_userbasket.php"; 
+String serverURL = "http://3.37.3.112/Load_userbasket.php";
 String postParameters = "&userID=" + searchKeyword1 +"&order_id=" + searchKeyword2
 
 ````
