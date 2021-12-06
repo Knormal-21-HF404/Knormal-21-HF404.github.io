@@ -49,12 +49,15 @@ String postParameters = "&userID=" + searchKeyword1 +"&order_id=" + searchKeywor
 
 ② php 파일에서 유저아이디와 주문번호가 일치하는 장바구니 정보를 받아옵니다.
 
-```java
-USER_ID = SharedPreference.getUserID(ShopActivity2.this);
-ORDER_ID = SharedPreference.getOrderID(ShopActivity2.this;
+```php
+	//POST 값을 읽어온다.
+	$userID = isset($_POST['userID']) ? $_POST['userID'] : ''; //이름값 가져옴
+	$order_id = isset($_POST['order_id']) ? $_POST['order_id'] : ''; //이름값 가져옴
+	$android = strpos($_SERVER['HTTP_USER_AGENT'], "Android");
 
-String serverURL = "http://3.37.3.112/Load_userbasket.php";
-String postParameters = "&userID=" + searchKeyword1 +"&order_id=" + searchKeyword2
+    $sql="select productName, productPrice, classNum from USERBASKET where userID='$userID' and order_id='$order_id'";
+    $stmt = $con->prepare($sql);
+    $stmt->execute();
 
 ````
 
