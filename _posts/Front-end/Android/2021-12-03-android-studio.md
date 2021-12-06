@@ -12,7 +12,7 @@ toc_sticky: true
 안드로이드 앱 "그냥 담아"를 사용하기 위해서는 사용자가 로그인&회원가입을 먼저 하고 넘어가도록 구성하였습니다.
 
 <center><img src="/assets/images/android1.jpg" width="200" height="300"> <img src="/assets/images/android2.jpg" width="200" height="300"></center>
-<center>로그인 회원가입</center>
+<center>로그인 & 회원가입</center>
 
 아이디와 비밀번호를 입력한 후 로그인을 하면 메인 페이지로 이동합니다.
 
@@ -80,7 +80,7 @@ task.execute(mEditTextSearchKeyword.getText().toString());
 물품과 관련된 상품도 추천해 같이 출력해 사용자가 확인할 수 있습니다.
 
 <center><img src="/assets/images/android9.jpg" width="200" height="300"> <img src="/assets/images/android10.jpg" width="200" height="300"></center>
-<center>검색화면 추천화면</center>
+<center>검색화면 & 추천화면</center>
 
 ③ 안드로이드 코드에 유저아이디를 php파일에 전달해 아이디가 일치하면 최신 주문번호를 받아옵니다.
 ```php
@@ -112,7 +112,7 @@ queue.add(checkRequest);
 
 ③ 전달받은 데이터는 데이터베이스 체크리스트 항목에 삽입해 체크리스트를 생성합니다.
 
-<center><img src="/assets/images/android6.jpg" width="200" height="300">체크리스트</center>
+<center><img src="/assets/images/android6.jpg" width="200" height="300"></center>
 <center>체크리스트</center>
 
 <br>
