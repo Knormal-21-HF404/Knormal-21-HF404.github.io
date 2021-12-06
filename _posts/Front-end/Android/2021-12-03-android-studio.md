@@ -85,4 +85,4 @@ handler.post(runnable1);}
 
 ````
 
-<center><img src="/assets/images/android7.jpg" width="200" height="300"></center> 장
+<center><img src="/assets/images/android7.jpg" width="200" height="300"></center> 장바구니
