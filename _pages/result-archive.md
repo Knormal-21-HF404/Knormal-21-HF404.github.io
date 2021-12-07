@@ -6,13 +6,29 @@ author_profile: true
 sidebar_main: true
 ---
 
-ust Cart Out(그냥 담아)은 딥러닝 기반 스마트 카트 서비스입니다.  
+Just Cart Out(그냥 담아)의 결과물 페이지입니다.
 "그냥 담아" 서비스는 쇼핑 카트에 물건을 담으면 자동으로 물건을 인식해 결제금액을 계산해주고 매장 출구로 나가는 순간, 자동으로 결제해주는 편리한 쇼핑 시스템입니다.
 
 ---
 ---
-## __Primary Function__
-- AI를 활용한 장바구니 자동 업데이트
-- 자동결제 서비스
-- 연관 상품 추천 서비스
-- 신선도 알림 서비스
+## 연관상품 추천
+![Hnet com-image](https://user-images.githubusercontent.com/89686109/145036350-d105b769-46f6-4888-8bc7-fb59d44a971d.gif)
+<center>추천 알고리즘 동작</center><br>
+
+
+## 물체인식
+![Hnet com-image (1)](https://user-images.githubusercontent.com/89686109/145037688-3a757f8b-e56f-4856-8128-e2daff0180b2.gif)
+<center>인식결과 데이터베이스 업데이트</center><br>
+
+<center>다중 클라이언트 상황에서 동시에 이용가능</center><br>
+
+
+## 신선도 알림
+
+<center>신선도 전용 비콘 근처에서 신선도 알림 버튼 클릭 시 신선도 정보 제공</center><br>
+
+
+
+## 자동결제
+
+<center>결제 전용 비콘 근처 접근 시 자동결제 진행</center><br>
