@@ -1,6 +1,6 @@
 ---
 title: "Posts by Project Results"
 permalink: /result/
-layout: posts
+layout: result
 author_profile: true
 ---
