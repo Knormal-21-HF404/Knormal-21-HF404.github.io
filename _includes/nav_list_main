@@ -27,14 +27,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Android" %}
-                        <li><a href="/categories/android" class="">Android_studio ({{category[1].size}})</a></li>
+                        <li><a href="/categories/frontend/android" class="">Android_studio ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Web" %}
-                        <li><a href="/categories/web" class="">Web ({{category[1].size}})</a></li>
+                        <li><a href="/categories/frontend/web" class="">Web ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
