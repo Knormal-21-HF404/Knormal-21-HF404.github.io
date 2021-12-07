@@ -1,6 +1,6 @@
 ---
 title: "Posts by Project Results"
-permalink: /posts/
-layout: result
+permalink: /result/
+layout: posts
 author_profile: true
 ---
