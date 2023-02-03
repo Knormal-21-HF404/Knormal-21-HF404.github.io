@@ -3,7 +3,7 @@ title: Android Studio Application
 categories:
 - Android
 tags:
-  - [Android]
+- Android
 toc: true
 toc_sticky: true
 ---
